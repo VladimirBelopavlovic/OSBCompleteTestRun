@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.1 on win32)" generated="20231116 19:32:02.214" rpa="false" schemaversion="4">
+<suite id="s1" name="OSBCompleteTestRun" source="C:\Users\Vlada\PycharmProjects\RobotFrameworkOSB\Tests\OSB\FunctionalTestSuite\OSBCompleteTestRun.robot">
+<test id="s1-t1" name="Complete OSB Vehicle Repair Scheaduling Test" line="13">
+<kw name="Start TestCase" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${website}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231116 19:32:02.729" level="INFO">Opening browser 'chrome' to base url 'https://jlr-vtab.com/en_GB/osb/booking/vehicle?client_code=KVBZDSBS'.</msg>
+<status status="PASS" starttime="20231116 19:32:02.727" endtime="20231116 19:32:06.610"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231116 19:32:06.610" endtime="20231116 19:32:06.744"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:02.727" endtime="20231116 19:32:06.744"/>
+</kw>
+<kw name="Go Through Step 1 Vehicle Info" library="OSB_VehicleScheduling">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="show-form"]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:06.747" level="INFO">Sending key(s) ('[Return]',) to //*[@id="show-form"] element.</msg>
+<msg timestamp="20231116 19:32:07.082" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:06.746" endtime="20231116 19:32:07.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:09.281" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:07.277" endtime="20231116 19:32:09.281"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>brand</arg>
+<arg>Land Rover</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20231116 19:32:09.282" level="INFO">Selecting options from selection list 'brand' by label Land Rover.</msg>
+<status status="PASS" starttime="20231116 19:32:09.281" endtime="20231116 19:32:09.393"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>model</arg>
+<arg>DISCOVERY</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20231116 19:32:09.394" level="INFO">Selecting options from selection list 'model' by label DISCOVERY.</msg>
+<status status="PASS" starttime="20231116 19:32:09.393" endtime="20231116 19:32:09.486"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="year"]</arg>
+<arg>2011</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:09.488" level="INFO">Typing text '2011' into text field '//*[@id="year"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:09.486" endtime="20231116 19:32:09.612"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>fuel</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20231116 19:32:09.612" level="INFO">Selecting options from selection list 'fuel' by index 1.</msg>
+<status status="PASS" starttime="20231116 19:32:09.612" endtime="20231116 19:32:09.864"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="mileage"]</arg>
+<arg>20000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:09.865" level="INFO">Typing text '20000' into text field '//*[@id="mileage"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:09.864" endtime="20231116 19:32:09.975"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:12.988" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:09.975" endtime="20231116 19:32:12.988"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="submit_vehicle"]/div[2]/button</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:12.989" level="INFO">Sending key(s) ('[Return]',) to //*[@id="submit_vehicle"]/div[2]/button element.</msg>
+<msg timestamp="20231116 19:32:14.419" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:12.988" endtime="20231116 19:32:14.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:16.452" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:14.444" endtime="20231116 19:32:16.452"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:06.745" endtime="20231116 19:32:16.452"/>
+</kw>
+<kw name="Go Through Step 2 Retailer" library="OSB_VehicleScheduling">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="div-buttons"]/button[2]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:16.454" level="INFO">Sending key(s) ('[Return]',) to //*[@id="div-buttons"]/button[2] element.</msg>
+<msg timestamp="20231116 19:32:17.459" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:16.453" endtime="20231116 19:32:17.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:19.527" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:17.511" endtime="20231116 19:32:19.527"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:16.452" endtime="20231116 19:32:19.527"/>
+</kw>
+<kw name="Go Through Step 3 Service" library="OSB_VehicleScheduling">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="own-service"]</arg>
+<arg>test service</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:19.529" level="INFO">Typing text 'test service' into text field '//*[@id="own-service"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:19.528" endtime="20231116 19:32:19.629"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:21.644" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:19.629" endtime="20231116 19:32:21.644"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="serviceNextStep"]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:21.645" level="INFO">Sending key(s) ('[Return]',) to //*[@id="serviceNextStep"] element.</msg>
+<msg timestamp="20231116 19:32:21.936" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:21.644" endtime="20231116 19:32:21.955"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:23.967" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:21.955" endtime="20231116 19:32:23.967"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:19.528" endtime="20231116 19:32:23.967"/>
+</kw>
+<kw name="Go Through Step 4 Schedule Date" library="OSB_VehicleScheduling">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="datepicker"]/div/div/a[2]/span</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:23.969" level="INFO">Sending key(s) ('[Return]',) to //*[@id="datepicker"]/div/div/a[2]/span element.</msg>
+<msg timestamp="20231116 19:32:24.262" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:23.968" endtime="20231116 19:32:24.279"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:26.285" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:24.279" endtime="20231116 19:32:26.285"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="datepicker"]/div/table/tbody/tr[3]/td[2]/a</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:26.286" level="INFO">Sending key(s) ('[Return]',) to //*[@id="datepicker"]/div/table/tbody/tr[3]/td[2]/a element.</msg>
+<msg timestamp="20231116 19:32:26.579" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:26.285" endtime="20231116 19:32:26.596"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:28.605" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:26.596" endtime="20231116 19:32:28.605"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="timeslot-container"]/div[4]/button</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:28.606" level="INFO">Sending key(s) ('[Return]',) to //*[@id="timeslot-container"]/div[4]/button element.</msg>
+<msg timestamp="20231116 19:32:28.899" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:28.605" endtime="20231116 19:32:28.924"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231116 19:32:30.933" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231116 19:32:28.924" endtime="20231116 19:32:30.933"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="setBookingType"]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:30.934" level="INFO">Sending key(s) ('[Return]',) to //*[@id="setBookingType"] element.</msg>
+<msg timestamp="20231116 19:32:31.736" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:30.933" endtime="20231116 19:32:31.786"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:23.968" endtime="20231116 19:32:31.786"/>
+</kw>
+<kw name="Go Through Step 5 Personal Details" library="OSB_VehicleScheduling">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="firstname"]</arg>
+<arg>Vladimir</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:31.788" level="INFO">Typing text 'Vladimir' into text field '//*[@id="firstname"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:31.787" endtime="20231116 19:32:31.998"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="submit_customer_details"]/div[1]/div[2]/div[1]/div[2]/input</arg>
+<arg>Belopavlovic</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:31.999" level="INFO">Typing text 'Belopavlovic' into text field '//*[@id="submit_customer_details"]/div[1]/div[2]/div[1]/div[2]/input'.</msg>
+<status status="PASS" starttime="20231116 19:32:31.998" endtime="20231116 19:32:32.123"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="input-email"]</arg>
+<arg>vbelopavlovic@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:32.124" level="INFO">Typing text 'vbelopavlovic@gmail.com' into text field '//*[@id="input-email"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:32.123" endtime="20231116 19:32:32.266"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="input-sms"]</arg>
+<arg>0603322082</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231116 19:32:32.266" level="INFO">Typing text '0603322082' into text field '//*[@id="input-sms"]'.</msg>
+<status status="PASS" starttime="20231116 19:32:32.266" endtime="20231116 19:32:32.371"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="submit_customer_details"]/div[2]/button[2]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231116 19:32:32.372" level="INFO">Sending key(s) ('[Return]',) to //*[@id="submit_customer_details"]/div[2]/button[2] element.</msg>
+<msg timestamp="20231116 19:32:33.789" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20231116 19:32:32.371" endtime="20231116 19:32:33.840"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:31.787" endtime="20231116 19:32:33.841"/>
+</kw>
+<kw name="Finish TestCase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231116 19:32:33.842" endtime="20231116 19:32:36.196"/>
+</kw>
+<status status="PASS" starttime="20231116 19:32:33.841" endtime="20231116 19:32:36.196"/>
+</kw>
+<doc>This test runs whole proces from step 1 to step 6</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20231116 19:32:02.726" endtime="20231116 19:32:36.197"/>
+</test>
+<doc>Complete Vehicle Repair Scheduling Test</doc>
+<status status="PASS" starttime="20231116 19:32:02.218" endtime="20231116 19:32:36.198"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="OSBCompleteTestRun">OSBCompleteTestRun</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
